@@ -1,7 +1,0 @@
-1.Chinese (Traditional) Language Pack for Visual Studio Code
-2.GitHub Copilot
-3.GitHub Copilot Chat
-4.HTML CSS Support
-5.HTML End Tag Labels
-6.IntelliSense for CSS class names in HTML
-7.Preview on Web Server
