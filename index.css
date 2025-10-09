@@ -1,0 +1,81 @@
+/* === 首頁專屬樣式 === */
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+}
+
+/* 區塊標題樣式 */
+.home-main .區塊標題 h3 {
+  color: #0078d7;
+  font-size: 1.4rem;
+  border-left: 4px solid #0078d7;
+  padding-left: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+/* 區塊主體布局 */
+.home-main .temp {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* 各目標卡片 + 參考資料卡片 */
+.home-main .temp > div,
+.home-main .temp > a {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: #333;
+}
+
+.home-main .temp > div:hover,
+.home-main .temp > a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 標題與文字樣式 */
+.home-main h4 {
+  color: #0078d7;
+  margin-bottom: 0.4rem;
+}
+
+.home-main p {
+  color: #555;
+  margin: 0.3rem 0 0.3rem 1rem;
+  line-height: 1.6;
+}
+
+/* 參考資料連結樣式 */
+.home-main .temp > a {
+  color: #0078d7;
+  font-weight: 600;
+}
+
+.home-main .temp > a:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+/* 響應式調整（手機） */
+@media (max-width: 768px) {
+  .home-main {
+    padding: 2rem 1rem;
+  }
+
+  .home-main .temp > div,
+  .home-main .temp > a {
+    padding: 1.2rem;
+  }
+}

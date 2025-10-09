@@ -1,0 +1,86 @@
+/* === 個人網頁專屬樣式 === */
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+}
+
+/* 通用卡片樣式 */
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 區塊標題 */
+.區塊標題 h3 {
+  color: #0078d7;
+  font-size: 1.4rem;
+  border-left: 4px solid #0078d7;
+  padding-left: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+/* 基本資料區塊 */
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-header img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  image-rendering: auto;
+  -webkit-image-rendering: auto;
+  -moz-image-rendering: auto;
+  -ms-interpolation-mode: bicubic; /* 針對舊版IE */
+}
+
+.profile-info p {
+  margin: 0.4rem 0;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* 聯絡資訊 */
+.聯絡 a {
+  color: #0078d7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.聯絡 a:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-header img {
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,67 @@
+/* === 全站通用設定 === */
+body {
+  font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  background-color: #f9fafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* === 頁首（Header）=== */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  color: #0078d7;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === 導覽列樣式 === */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  padding-bottom: 2px;
+}
+
+nav a:hover,
+nav a.active {
+  color: #0078d7;
+  border-bottom: 2px solid #0078d7;
+}
+
+/* === 頁尾（Footer）=== */
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  padding: 1.2rem 0;
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
